@@ -147,6 +147,23 @@ export default function Home(){
       </section>
       <section>
         <h1 className="titre">Outils de développements</h1>
+        <div className="containerCard">
+          <div className="cardoutil">
+              <h2>CARD</h2>
+          </div>
+          <div className="cardoutil">
+              <h2>CARD</h2>
+          </div>
+          <div className="cardoutil">
+              <h2>CARD</h2>
+          </div>
+          <div className="cardoutil">
+              <h2>CARD</h2>
+          </div>
+          <div className="cardoutil">
+              <h2>CARD</h2>
+          </div>
+        </div>
       </section>
       <section>
         <h1 className="titre">Autres compétences</h1>
