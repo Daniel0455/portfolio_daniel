@@ -26,6 +26,7 @@ section
   top: 0px;
   left: 0px;
   width: 100%;
+  z-index: 10;
   background-color: rgba(160, 0, 160, 0.05);;
   justify-content: space-between;
   backdrop-filter: blur(50px);
@@ -90,15 +91,15 @@ section
   margin: 20px;
   padding: 10px;
   border-radius: 5px;
-  background-color: rgb(160, 0, 160);
+  background-color: rgba(160, 0, 160);
   transition: 0.25s;
   color: white;
 }
 .boutton:hover
 {
-  background-color: white;
+  background-color: rgb(160, 0, 160);
   transition: 0.25s;
-  color: rgb(160, 0, 160);
+  /* color: rgb(160, 0, 160); */
   transform:scale(1.05)
 }
 .deco1
@@ -114,17 +115,113 @@ section
   filter:blur(50px);
   box-shadow: 0px 0px 60px 10px rgba(255, 255, 255, 0.329), 0px 0px 80px 100px rgb(160, 0, 160);
 }
-.card
+
+/*Card*/
+.containerCard
 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  margin:20px;
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
   width: 200px;
-  height: auto;
-  padding: 10px;
-  border-radius: 5px;
-  background: none;
-  text-align: center;
-  border: 1px solid red;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.cadrImage
+
+.card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.card p:not(.heading) {
+  font-size: 14px;
+}
+
+.card p:last-child {
+  color: #e81cff;
+  font-weight: 600;
+}
+
+.card:hover::after {
+  filter: blur(30px);
+}
+
+.card:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+
+/*Icon*/
+.tech-icon {
+  font-size: 50px;
+}
+
+.fa-html5 {
+  color: #e34f26;         /* couleur HTML5 */
+}
+
+.fa-css3-alt {
+  color: #264de4;         /* couleur CSS3 */
+}
+.fa-js
 {
-  font-size: 30px;
+  color: #f7df1e;
 }
+.fa-php
+{
+  color: #777bb4;;
+}
+.fa-python
+{
+  color: #3776AB;
+}
+.fa-database
+{
+  color: #4479A1;
+}
+.divLogo {
+  display: flex;               /* active Flexbox */
+  justify-content: center;     /* centre horizontalement */
+  align-items: center;         /* centre verticalement si le conteneur a une hauteur */
+  gap: 10px;                   /* espace égal entre les icônes */
+  flex-wrap: wrap;             /* permet aux icônes de passer à la ligne si trop */
+  margin: 20px 0;              /* un peu d’espace autour */
+}
+
+/*Fond*/
