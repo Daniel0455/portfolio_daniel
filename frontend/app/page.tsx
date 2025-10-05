@@ -146,9 +146,17 @@ export default function Home(){
         </div>
       </section>
       <section>
+        <h1 className="titre">Outils de développements</h1>
+      </section>
+      <section>
+        <h1 className="titre">Autres compétences</h1>
+      </section>
+      <section>
         <h1 className="titre">Mes projets</h1>
         <div>
-          
+          <div>
+            <img src="../img" alt="" />
+          </div>
         </div>
       </section>
       <section>
