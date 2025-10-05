@@ -35,6 +35,7 @@ export default function Home(){
           Curieux et créatif✍️, j’apprends en continu et je suis convaincu que <u>la collaboration est essentielle </u>pour <label className="souligne">créer des projets de qualité.</label>
         </p>
         <h1 className="titre">Langanges informatiques connus</h1>
+        <p className="paragraphe"><label className="souligne">Passionné par le développement et les nouvelles technologies</label>, j’ai eu l’occasion d’apprendre et de pratiquer plusieurs langages informatiques au fil de mes projets et mes études. Voici les <label className="souligne">principaux langages dont j'ai des connnaissances</label>, chacun contribuant à ma polyvalence et à ma capacité d’adaptation dans différents environnements de développement:</p>
         <div className="containerCard">
           <div className="card">
             <div className="divLogo">
@@ -147,21 +148,22 @@ export default function Home(){
       </section>
       <section>
         <h1 className="titre">Outils de développements</h1>
+        <p className="paragraphe">En complément de <label className="souligne">mes connaissances en langages informatiques</label>, j’utilise <label className="souligne">plusieurs outils et environnements de développement</label> qui facilitent la conception, le test et le déploiement de mes projets. Ces outils me permettent de travailler efficacement, d’assurer <label className="souligne">une bonne organisation du code</label> et d’optimiser le processus de développement</p>
         <div className="containerCard">
           <div className="cardoutil">
-              <h2>CARD</h2>
+              <h2>Windows</h2>
           </div>
           <div className="cardoutil">
-              <h2>CARD</h2>
+              <h2>VsCode</h2>
           </div>
           <div className="cardoutil">
-              <h2>CARD</h2>
+              <h2>Pycharm</h2>
           </div>
           <div className="cardoutil">
-              <h2>CARD</h2>
+              <h2>Xampp</h2>
           </div>
           <div className="cardoutil">
-              <h2>CARD</h2>
+              <h2>PostgreSQL</h2>
           </div>
         </div>
       </section>
