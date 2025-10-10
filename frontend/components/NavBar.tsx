@@ -2,18 +2,21 @@ export default function NavBar(){
     let buttons = [
         {label: "Accueil"},
         {label: "A propos"},
-        { label: "Projets"}
+        {label: "Compétences"},
+        {label: "Projets"},
+        {label: "Experiences"},
+        {label: "Contact"},
     ]
     return(
         <>
         <nav className="navBar">
-            <div></div>
-            <div>
+            <div className="containerLogo"><button>Logo</button></div>
+            <div className="containerButtons">
                 {buttons.map((btn) =>(
                     <button key={btn.label}>{btn.label}</button>
                 ))}
             </div>
-            <div></div>
+            <div className="containerTheme"><button>Theme</button></div>
         </nav>
         </>
     )
