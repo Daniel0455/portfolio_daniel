@@ -1,0 +1,29 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+body
+{
+  background-color: rgb(4, 13, 20);
+}
+.mainContainer
+{
+  margin: 20px;
+  border: solid 3px rgb(56, 62, 69);
+  border-radius: 10px;
+  position: fixed;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  top: 2px;
+  background: linear-gradient(45Deg,rgb(40, 27, 53) ,rgb(4, 13, 20));
+}
+.navBar
+{
+  width: 100%;
+  position: sticky;
+  padding: 10px;
+  justify-content: space-between;
+}
