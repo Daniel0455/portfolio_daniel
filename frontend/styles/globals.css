@@ -178,6 +178,12 @@ body
   color: rgb(255, 251, 0);
   font-size: 30px;
 }
+/*Projet*/
+.cardProjet
+{
+  border: 1px solid white;
+  border-radius: 10px;
+}
 
 /*Toggle*/
 .switch {

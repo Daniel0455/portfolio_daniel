@@ -3,6 +3,7 @@ import NavBar from "@/components/NavBar"
 import Profil from "@/components/Profil"
 import Background from "@/components/Background"
 import Statistique from "@/components/Statistique"
+import Projet from "@/components/Projet"
 export default function Home(){
     return(
         <>
@@ -11,6 +12,8 @@ export default function Home(){
                 <Profil/>
                 <hr />
                 <Statistique/>
+                <hr />
+                <Projet/>
             </div>
         </>
     )
