@@ -16,7 +16,13 @@ export default function NavBar(){
                     <button key={btn.label}>{btn.label}</button>
                 ))}
             </div>
-            <div className="containerTheme"><button>Theme</button></div>
+            <div className="containerTheme">
+                <label className="switch">
+                <input type="checkbox" />
+                <span className="slider"></span>
+                <span className="clouds_stars"></span>
+                </label>
+            </div>
         </nav>
         </>
     )
