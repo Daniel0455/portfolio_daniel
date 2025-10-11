@@ -9,6 +9,7 @@ export default function Home(){
             <div className="mainContainer">
                 <NavBar/>
                 <Profil/>
+                <hr />
                 <Statistique/>
             </div>
         </>

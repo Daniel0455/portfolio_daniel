@@ -140,6 +140,7 @@ body
 .containerStatistiqueMain
 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -159,7 +160,6 @@ body
 .cardStatistique
 {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   border: 1px solid white;
@@ -171,6 +171,12 @@ body
 .cardStatistique p
 {
   margin: 10px;
+  font-weight: bold;
+}
+.nombreCardStatistique
+{
+  color: rgb(255, 251, 0);
+  font-size: 30px;
 }
 
 /*Toggle*/
@@ -312,5 +318,32 @@ body
   .mainContainer
   {
     margin:5px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .containerStatistiqueMain
+  {
+    display: grid;
+  }
+  .containerStatistiqueMain div
+  {
+    width: 100%;
+  }
+  .containerStatistique
+  {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .containerDescStatistique
+  {
+    text-align: center;
+  }
+  .cardStatistique
+  {
+    max-width: 250px;
+  }
+  .containerCard
+  {
+    justify-content: center;
   }
 }

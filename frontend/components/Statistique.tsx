@@ -17,7 +17,7 @@ export default function Statistique(){
                     <div className="containerCard">
                         {donnees.map((donnee) =>(
                             <div key={donnee.label} className="cardStatistique">
-                                <p>{donnee.nombre}</p>
+                                <p className="nombreCardStatistique">{donnee.nombre}</p>
                                 <p>{donnee.label}</p>
                             </div>
                         ))}
