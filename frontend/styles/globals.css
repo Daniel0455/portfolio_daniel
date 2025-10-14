@@ -166,6 +166,7 @@ body
   margin: 5px;
   border-radius: 5px;
   background: linear-gradient(45Deg, rgb(220, 130, 201),rgb(255, 222, 190));
+  box-shadow: 1px 1px 5px 0px grey;
 
 }
 .cardStatistique p
@@ -179,12 +180,32 @@ body
   font-size: 30px;
 }
 /*Projet*/
+.containerProjetMain
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .cardProjet
 {
   border: 1px solid white;
   border-radius: 10px;
+  margin: 10px;
+  width: 300px;
 }
-
+.projetNom
+{
+  background: linear-gradient(45Deg, rgb(220, 130, 201),rgb(255, 222, 190));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 0px;
+  padding:10px;
+}
 /*Toggle*/
 .switch {
   /* border: 2px solid rebeccapurple; */

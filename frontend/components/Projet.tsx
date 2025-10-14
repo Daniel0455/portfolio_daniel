@@ -4,7 +4,7 @@ export default function Projet() {
         {
             nom: "StageTracker Pro", 
             desc: "Application web de suivi de stage dans une entreprise",
-            techno: "NextJS(JavaScript),Express(JavaScript), Taillwindcss(CSS), MDB(CSS)"
+            techno: "NextJS(JavaScript), Express(JavaScript), Taillwindcss(CSS), MDB(CSS)"
         },
         {
             nom: "OptionTech",
@@ -40,7 +40,7 @@ export default function Projet() {
                 <div className="containerProjetMain">
                     {projets.map((projet) => (
                         <div key={projet.nom} className="cardProjet">
-                            <p>{projet.nom}</p>
+                            <p className="projetNom">{projet.nom}</p>
                             <p>{projet.desc}</p>
                             <p>{projet.techno}</p>
                         </div>

@@ -1,0 +1,15 @@
+# Ignorer les dossiers Node.js
+node_modules/
+frontend/node_modules/
+
+# Ignorer les fichiers de build Next.js
+frontend/.next/
+
+# Ignorer les fichiers d'environnement
+frontend/.env
+frontend/.env.local
+frontend/.env.production.local
+
+# Fichiers système
+.DS_Store
+Thumbs.db
