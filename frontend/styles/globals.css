@@ -70,6 +70,15 @@ p{ all: unset; display: block;}
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
+    transition:0.1s;
+}
+.bprofil:hover
+{
+    transform:scale(1.02);
+}
+.bprofil:active
+{
+    transform:scale(0.98);
 }
 .contactprofil
 {
@@ -130,8 +139,8 @@ p{ all: unset; display: block;}
     border-radius: 100%;
     position: absolute;
     z-index: -1;
-    filter: blur(50px);
-    opacity: 10%;
+    filter: blur(100px);
+    opacity: 20%;
     transform: translateX(-50%) translateY(-50%);
 }
 /*Responsive*/
