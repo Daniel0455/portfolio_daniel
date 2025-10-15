@@ -1,25 +1,31 @@
-export default function Profil(){
-    let buttons = [
-        {label: "Me contacter", icon: "fas fa-envelope"},
-        {label: "Télécharger CV", icon: "fas fa-download"},
-    ]
-    return(
-        <>
-        <div className="containerProfil">
-            <div className="containerDescProfil">
-                <p>Bonjour, je m'appelle Daniel</p>
-                <p className="profetionProfil">Développeur Web</p>
-                <p className="descProfil"> Développeur web full-stack passionné, je conçois des applications modernes et performantes en alliant front-end et back-end. J’utilise des technologies comme Next.js, Node.js et PostgreSQL pour créer des solutions efficaces, sécurisées et centrées sur l’expérience utilisateur.</p>
-                <div className="containerButtonsProfil">
-                    {buttons.map((btn) =>(
-                        <div key={btn.label} className="btnRadius"><button className="buttonProfile"> <i className={btn.icon}></i>{btn.label}</button></div>
-                    ))}
+"use client"
+export default function Profil() {
+    return (
+        <div className="containerprofil">
+            <div className="cpgauche">
+                <div className="cbienvenue">
+                    <p className="bienvenue">Bienvenue dans mon univers</p>
+                </div>
+                <p className="pnoir">Bonjour, je suis <label className="daniel">Daniel</label></p>
+                <p className="pgris">Développeur web</p>
+                <p className="pgris">
+                    Passionné par la création d'expériences web innovantes et élégantes. Je transforme des idées en solutions digitales performantes avec une attention particulière aux détails et à l'expérience utilisateur.
+                </p>
+                <div>
+                    <button className="bprofil contactprofil"><i className="fas fa-envelope"></i> Me contacter</button>
+                    <button className="bprofil downloadprofil"><i className="fa-solid fa-download"></i> Télécharger CV</button>
                 </div>
             </div>
-            <div className="containerPdpProfil">
+            <div className="cpdroit">
+                <div className="pdpprofil">
 
+                </div>
             </div>
+
+            {/*Déco */}
+            <div className="decoprofil decorouge"></div>
+            <div className="decoprofil decobleu"></div>
+            <div className="decoprofil decoviolet"></div>
         </div>
-        </>
     )
 }

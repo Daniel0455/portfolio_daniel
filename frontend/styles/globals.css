@@ -1,0 +1,129 @@
+/*******************************Initialisation**********************************/
+:root {
+    --bleu : rgb(25, 93, 252);
+    --violet: rgb(152, 19, 251);
+    --rouge: rgb(220, 8, 134);
+    --gris: rgb(113, 113, 130);
+    --noir: black;
+    --blanc: white;
+    --bleu-bordure: rgba(0, 0, 255, 0.25);
+
+    --bleu-indice : 25, 93, 252;
+    --violet-indice: 152, 19, 251;
+    --rouge-indice: 220, 8, 134;
+}
+p{ all: unset; display: block;}
+
+/************************************Profil*************************************/
+.containerprofil
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.cpgauche
+{
+    width: 50%;
+    justify-content: left;
+}
+.cbienvenue
+{
+    padding:10px 20px 10px 20px;
+    border-radius: 100px;
+    border: 1px solid var(--bleu-bordure);
+    background-color: rgba(0, 0, 0, 0.05);
+    width: fit-content;
+}
+.bienvenue
+{
+    background: linear-gradient(90Deg, var(--bleu), var(--violet));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.daniel
+{
+    background: linear-gradient(90Deg, var(--bleu), var(--rouge));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.pnoir, .pgris
+{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.pnoir
+{
+    color: var(--noir);
+}
+.pgris
+{
+    color: var(--gris);
+}
+.bprofil
+{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.contactprofil
+{
+    background: linear-gradient(90Deg, var(--bleu), var(--violet));
+    color: var(--blanc);
+    border: none;
+}
+.downloadprofil
+{
+    background-color: var(--blanc);
+    border: 1px solid var(--bleu);
+    color: var(--noir);
+}
+.cdroit
+{
+    width: 50%;
+    justify-content: right;
+}
+.pdpprofil
+{
+    width:300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 5px solid var(--blanc);
+    box-shadow: 20px 20px 30px 0px rgba(var(--bleu-indice),0.3),
+        -20px 20px 30px 0px rgba(var(--violet-indice), 0.3),
+        10px -20px 30px 0px rgba(var(--rouge-indice),0.3);
+}
+/*Déco*/
+.decorouge
+{
+    background-color: var(--rouge);
+    left: 50%;
+}
+.decobleu
+{
+    background-color: var(--bleu);
+    left: 25%;
+    top: 50vh;
+}
+.decoviolet
+{
+    background-color: var(--violet);
+    left: 75%;
+    top: 50vh;
+}
+.decoprofil
+{
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: blur(50px);
+    opacity: 10%;
+    transform: translateX(-50%) translateY(-50%);
+}
