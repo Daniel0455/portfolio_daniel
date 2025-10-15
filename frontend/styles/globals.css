@@ -89,6 +89,7 @@ p{ all: unset; display: block;}
     margin: 10px;
     border-radius: 10px;
     transition:0.1s;
+    width: 201px;
 }
 .bprofil:hover
 {
