@@ -1,10 +1,10 @@
 "use client"
 export default function Statistique(){
     let cardStat = [
-        {titre: "Projets réalisés", icon: "fa-solid fa-diagram-project", fond: "rgba(25, 93, 252, 0.03)", couleur: "rgba(25, 93, 252)", valeur: "7+"},
-        {titre: "Collaborations", icon: "fa-solid fa-people-group", fond: "rgb(152, 19, 251, 0.03)", couleur: "rgb(152, 19, 251)", valeur: "5+"},
-        {titre: "Outils utilisés", icon: "fa-solid fa-wrench", fond: "rgba(255, 166, 0, 0.03)", couleur: "rgba(255, 166, 0)", valeur: "10+"},
-        {titre: "Langages connus", icon: "fa-solid fa-code", fond: "rgba(0, 128, 0, 0.03)", couleur: "rgba(0, 128, 0)", valeur: "10+"},
+        {titre: "Projets réalisés", icon: "fa-solid fa-diagram-project", fond: "rgba(25, 93, 252, 0.05)", couleur: "rgba(25, 93, 252)", couleur2: "rgb(97, 144, 255)", valeur: "7+"},
+        {titre: "Collaborations", icon: "fa-solid fa-people-group", fond: "rgb(152, 19, 251, 0.05)", couleur: "rgb(152, 19, 251)",couleur2: "rgb(196, 118, 255)", valeur: "5+"},
+        {titre: "Outils utilisés", icon: "fa-solid fa-wrench", fond: "rgba(255, 166, 0, 0.05)", couleur: "rgba(255, 166, 0)",couleur2: "rgb(255, 205, 111)", valeur: "10+"},
+        {titre: "Langages connus", icon: "fa-solid fa-code", fond: "rgba(0, 128, 0, 0.05)", couleur: "rgba(0, 128, 0)",couleur2: "rgb(111, 250, 111)", valeur: "10+"},
     ]
     return(
         <div className="containerstat">
@@ -27,14 +27,14 @@ export default function Statistique(){
                 </div>
                 <div className="cpdroit csdroit">
                     {cardStat.map((card) => (
-                        <div key={card.titre} style={{backgroundColor: card.fond, width: '250px', textAlign: 'center', padding: '20px', borderRadius: '10px', margin: '20px', border: '1px solid '+card.couleur}}>
+                        <div className='statcard' key={card.titre} style={{backgroundColor: card.fond, width: '250px', textAlign: 'center', padding: '20px', borderRadius: '10px', margin: '20px', border: '1px solid '+card.couleur}}>
                             <i
                                 className={card.icon}
                                 style={{
                                 width: "60px",
                                 height: "60px",
                                 borderRadius: "50%",
-                                backgroundColor: card.couleur,
+                                background: "linear-gradient(135deg,"+ card.couleur2+","+ card.couleur+")",
                                 color: "white",
                                 display: "flex",
                                 alignItems: "center",

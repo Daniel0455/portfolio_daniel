@@ -167,6 +167,16 @@ p{ all: unset; display: block;}
     display: flex;
     flex-wrap: wrap;
 }
+.statcard
+{
+    transition: 0.5s;
+}
+.statcard:hover
+{
+    box-shadow: 5px 5px 10px 0px rgba(128, 128, 128, 0.253);
+    transform: scale(1.02);
+    transition: 0.5s;
+}
 /*Responsive*/
 @media screen and (max-width: 830px) {
     .containerprofil
