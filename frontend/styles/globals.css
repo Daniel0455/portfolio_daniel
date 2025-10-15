@@ -177,6 +177,20 @@ p{ all: unset; display: block;}
     transform: scale(1.02);
     transition: 0.5s;
 }
+/**********************************Projet**************************************/
+.intropro
+{
+    max-width: 500px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    text-align: center;
+}
+.containerprojet
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 /*Responsive*/
 @media screen and (max-width: 830px) {
     .containerprofil

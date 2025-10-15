@@ -16,7 +16,7 @@ export default function Statistique(){
                         Razafindranaivo Aimé Daniel Johnston
                     </p>
                     <p className="pgris">
-                        Développeur web passionné avec plusieurs années d'expérience dans la création d'applications web modernes et performantes. Je me spécialise dans le développement frontend avec une expertise approfondie en React, TypeScript et les technologies web modernes.
+                        Développeur web passionné dans la création d'applications web modernes et performantes. Je me spécialise dans le développement frontend avec une expertise approfondie en Next.js, TypeScript et les technologies web modernes.
                     </p>
                     <p className="pgris">
                         Mon parcours m'a permis de travailler sur des projets variés, allant de sites vitrines élégants à des applications web complexes. Je crois fermement que le code doit être à la fois fonctionnel et esthétique.
@@ -27,7 +27,7 @@ export default function Statistique(){
                 </div>
                 <div className="cpdroit csdroit">
                     {cardStat.map((card) => (
-                        <div className='statcard' key={card.titre} style={{backgroundColor: card.fond, width: '250px', textAlign: 'center', padding: '20px', borderRadius: '10px', margin: '20px', border: '1px solid '+card.couleur}}>
+                        <div className='statcard' key={card.titre} style={{backgroundColor: card.fond, width: '250px', textAlign: 'center', padding: '20px', borderRadius: '20px', margin: '20px', border: '2px solid rgba(128, 128, 128, 0.253)'}}>
                             <i
                                 className={card.icon}
                                 style={{

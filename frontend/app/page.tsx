@@ -14,6 +14,7 @@ export default function Home(){
             <div className="mainContainer">
                 <Profil/>
                 <Statistique/>
+                <Projet/>
             </div>
         </>
     )
