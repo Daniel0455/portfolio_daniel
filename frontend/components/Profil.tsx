@@ -7,12 +7,12 @@ export default function Profil(){
         <>
         <div className="containerProfil">
             <div className="containerDescProfil">
-                <p>Je suis Daniel</p>
-                <p className="profetionProfil">Développeur Web | Desktop</p>
-                <p className="descProfil">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam unde temporibus itaque, nobis voluptas vel officiis corporis harum, dicta reprehenderit ipsum explicabo obcaecati, quasi dolor esse earum eaque ipsa maxime?</p>
+                <p>Bonjour, je m'appelle Daniel</p>
+                <p className="profetionProfil">Développeur Web</p>
+                <p className="descProfil">Mon nom c'est Razafindranaivo Aimé Daniel Johnston. Développeur web full-stack passionné, je conçois des applications modernes et performantes en alliant front-end et back-end. J’utilise des technologies comme Next.js, Node.js et PostgreSQL pour créer des solutions efficaces, sécurisées et centrées sur l’expérience utilisateur.</p>
                 <div className="containerButtonsProfil">
                     {buttons.map((btn) =>(
-                        <div key={btn.label} className="btnRadius"><button> <i className={btn.icon}></i>{btn.label}</button></div>
+                        <div key={btn.label} className="btnRadius"><button className="buttonProfile"> <i className={btn.icon}></i>{btn.label}</button></div>
                     ))}
                 </div>
             </div>
