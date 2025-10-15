@@ -12,20 +12,7 @@ export default function Home(){
     return(
         <>
             <div className="mainContainer">
-                <NavBar/>
                 <Profil/>
-                <hr />
-                <Statistique/>
-                <hr />
-                <Projet/>
-                <hr />
-                <Outil />
-                <hr />
-                <Langage />
-                <hr />
-                <Experience />
-                <hr />
-                <Contact />
             </div>
         </>
     )
