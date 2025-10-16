@@ -18,6 +18,7 @@ export default function Home(){
                 <Projet/>
                 <Outil/>
                 <Langage/>
+                <Contact/>
                 <FuturisticBackground/>
             </div>
         </>

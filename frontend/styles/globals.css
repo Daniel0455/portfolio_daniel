@@ -207,6 +207,37 @@ p{ all: unset; display: block;}
     transform: scale(1.02);
     transition: 0.5s;
 }
+/********************Concact*********************/
+.cardcontact
+{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid rgba(128, 128, 128, 0.253);
+    text-align: center;
+    backdrop-filter: blur(3px);
+    width: 300px;
+}
+.arg
+{
+    margin: 10px 100px 10px 100px;
+    border-radius: 20px;
+    border: 2px solid rgba(128, 128, 128, 0.253);
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.1);
+}
+.cdroit
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right:0;
+    background-color: rgba(128, 128, 128, 0.1);
+    text-align: center;
+    border: 2px solid rgba(128, 128, 128, 0.253);
+    padding: 50px 5px 50px 5px;
+}
 /*Responsive*/
 @media screen and (max-width: 830px) {
     .containerprofil
