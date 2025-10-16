@@ -4,7 +4,7 @@ export default function Projet(){
         {
             titre: "Portfolio",
             couleur: "rgb(52, 152, 219)",
-            desc: "Application web qui me represente en tant que développeur web, mais surtout pour démontre ma capacité de développer une interface interactive et innovante",
+            desc: "Application web qui me représente en tant que développeur web, mais surtout pour démontrer ma capacité de développer une interface interactive et innovante",
             techno: ['Next.js', 'CSS', 'fontAwesome']
         },
         {

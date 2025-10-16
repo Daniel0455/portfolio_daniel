@@ -16,6 +16,7 @@ export default function Home(){
                 <Profil/>
                 <Statistique/>
                 <Projet/>
+                <Outil/>
                 <FuturisticBackground/>
             </div>
         </>
