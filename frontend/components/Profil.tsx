@@ -13,7 +13,11 @@ export default function Profil() {
                 </p>
                 <div>
                     <a href="#contacts"><button className="bprofil contactprofil"><i className="fas fa-envelope"></i> Me contacter</button></a>
-                    <button className="bprofil downloadprofil"><i className="fa-solid fa-download"></i> Télécharger CV</button>
+                    <a href="/RazafindranaivoAimeDanielJohnstonResume.pdf" download>
+                        <button className="bprofil downloadprofil">
+                            <i className="fa-solid fa-download"></i> Télécharger CV
+                        </button>
+                    </a>
                 </div>
             </div>
             <div className="cpdroit">
