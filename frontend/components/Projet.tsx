@@ -48,7 +48,7 @@ export default function Projet(){
             <div className="ligne"></div>
             <div className="containerprojet">
                 {projets.map((projet) => (
-                    <div key={projet.titre} style={{padding: '20px', margin: '20px', borderRadius: '20px', border: '2px solid rgba(128, 128, 128, 0.253)', width:'300px'}}>
+                    <div key={projet.titre} style={{padding: '20px', margin: '20px', borderRadius: '20px', border: '2px solid rgba(128, 128, 128, 0.253)', width:'300px', backdropFilter: 'blur(3px)'}}>
                         <i className='fas fa-laptop-code' style={{fontSize:'35px', color: projet.couleur}}></i>
                         <p className="pnoir">{projet.titre}</p>
                         <p className="pgris">{projet.desc}</p>

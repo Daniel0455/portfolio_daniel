@@ -27,7 +27,7 @@ export default function Statistique(){
                 </div>
                 <div className="cpdroit csdroit">
                     {cardStat.map((card) => (
-                        <div className='statcard' key={card.titre} style={{backgroundColor: card.fond, width: '250px', textAlign: 'center', padding: '20px', borderRadius: '20px', margin: '20px', border: '2px solid rgba(128, 128, 128, 0.253)'}}>
+                        <div className='statcard' key={card.titre} style={{backgroundColor: card.fond, width: '250px', textAlign: 'center', padding: '20px', borderRadius: '20px', margin: '20px', border: '2px solid rgba(128, 128, 128, 0.253)', backdropFilter: 'blur(3px)'}}>
                             <i
                                 className={card.icon}
                                 style={{
