@@ -197,6 +197,16 @@ p{ all: unset; display: block;}
     flex-wrap: wrap;
     justify-content: center;
 }
+.cardprojet
+{
+    transition: 0.5s;
+}
+.cardprojet:hover
+{
+    box-shadow: 5px 5px 10px 0px rgba(128, 128, 128, 0.253);
+    transform: scale(1.02);
+    transition: 0.5s;
+}
 /*Responsive*/
 @media screen and (max-width: 830px) {
     .containerprofil
