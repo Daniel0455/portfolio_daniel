@@ -23,7 +23,7 @@ export default function Contact() {
         },
     ]
     return(
-        <div className="containercontact">
+        <div className="containercontact" id="contacts">
             <p className="soustitre">Restons en <label className="daniel">Contact</label></p>
             <p className="intropro">N'hésitez pas à me contacter pour discuter de vos projets ou simplement échanger.</p>
             <div className="ligne"></div>

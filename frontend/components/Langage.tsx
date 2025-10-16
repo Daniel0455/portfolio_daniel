@@ -29,7 +29,7 @@ export default function Langage() {
             <div className="ligne"></div>
             <div className="containerprojet">
                 {langages.map((langage) => (
-                    <div className="cardprojet" key={langage.nom} style={{padding: '20px', margin: '20px', borderRadius: '20px', border: '2px solid rgba(128, 128, 128, 0.253)', width:'300px', backdropFilter: 'blur(3px)', backgroundColor: langage.fond}}>
+                    <div className="cardprojet" key={langage.nom} style={{padding: '20px', margin: '20px', borderRadius: '20px', border: '2px solid rgba(128, 128, 128, 0.253)', width:'150px', backdropFilter: 'blur(3px)', backgroundColor: langage.fond}}>
                         <i
                         className="fas fa-code"
                         style={{

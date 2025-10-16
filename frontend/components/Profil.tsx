@@ -12,7 +12,7 @@ export default function Profil() {
                     Passionné par la création d'expériences web innovantes et élégantes. Je transforme des idées en solutions digitales performantes avec une attention particulière aux détails et à l'expérience utilisateur.
                 </p>
                 <div>
-                    <button className="bprofil contactprofil"><i className="fas fa-envelope"></i> Me contacter</button>
+                    <a href="#contacts"><button className="bprofil contactprofil"><i className="fas fa-envelope"></i> Me contacter</button></a>
                     <button className="bprofil downloadprofil"><i className="fa-solid fa-download"></i> Télécharger CV</button>
                 </div>
             </div>
