@@ -159,7 +159,7 @@ p{ all: unset; display: block;}
     position: absolute;
     z-index: -1;
     filter: blur(100px);
-    opacity: 20%;
+    opacity: 10%;
     transform: translateX(-50%) translateY(-50%);
 }
 /******************************Statistique*******************************************************/
