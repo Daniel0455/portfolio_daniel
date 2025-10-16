@@ -40,6 +40,7 @@ p{ all: unset; display: block;}
     justify-content: space-between;
     min-height: 100vh;
     padding: 5%;
+    padding-top:5px;
     position: relative;
     overflow: hidden;
 }
@@ -72,8 +73,8 @@ p{ all: unset; display: block;}
 }
 .pnoir, .pgris
 {
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 .pnoir
 {
