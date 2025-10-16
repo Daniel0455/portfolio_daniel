@@ -20,7 +20,7 @@ export default function FuturisticBackground({ children }: FuturisticBackgroundP
     let width = (canvas.width = window.innerWidth);
     let height = (canvas.height = window.innerHeight);
 
-    const nodes = Array.from({ length: 30 }, () => ({
+    const nodes = Array.from({ length: 20 }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
       vx: (Math.random() - 0.5) * 0.7,

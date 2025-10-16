@@ -128,9 +128,9 @@ p{ all: unset; display: block;}
     border-radius: 100%;
     float: right;
     border: 5px solid var(--blanc);
-    box-shadow: 20px 20px 30px 0px rgba(var(--bleu-indice),0.3),
-        -20px 20px 30px 0px rgba(var(--violet-indice), 0.3),
-        10px -20px 30px 0px rgba(var(--rouge-indice),0.3);
+    box-shadow: 30px 30px 30px 0px rgba(var(--bleu-indice),0.1),
+        -30px 30px 30px 0px rgba(var(--violet-indice), 0.1),
+        15px -30px 30px 0px rgba(var(--rouge-indice),0.1);
     background-image: url(../img/pdp.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -164,7 +164,7 @@ p{ all: unset; display: block;}
     position: absolute;
     z-index: -1;
     filter: blur(100px);
-    opacity: 10%;
+    opacity: 2%;
     transform: translateX(-50%) translateY(-50%);
 }
 /******************************Statistique*******************************************************/
