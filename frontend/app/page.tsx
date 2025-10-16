@@ -8,6 +8,7 @@ import Outil from "@/components/Outil"
 import Langage from "@/components/Langage"
 import Experience from "@/components/experience"
 import Contact from "@/components/contact"
+import FuturisticBackground from "@/components/Background"
 export default function Home(){
     return(
         <>
@@ -15,6 +16,7 @@ export default function Home(){
                 <Profil/>
                 <Statistique/>
                 <Projet/>
+                <FuturisticBackground/>
             </div>
         </>
     )

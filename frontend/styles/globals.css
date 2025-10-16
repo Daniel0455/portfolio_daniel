@@ -31,6 +31,10 @@ p{ all: unset; display: block;}
     margin-left: 50%;
     margin-top: 10px;
 }
+*
+{
+    font-family: var(--font-inter), sans-serif;
+}
 
 /************************************Profil*************************************/
 .containerprofil

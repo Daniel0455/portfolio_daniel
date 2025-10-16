@@ -1,13 +1,16 @@
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono,Inter, Montserrat } from "next/font/google";
 import "../styles/globals.css";
+import React from 'react';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
