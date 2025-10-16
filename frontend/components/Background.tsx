@@ -1,14 +1,22 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef, ReactNode } from "react";
 
-export default function FuturisticBackground({ children }) {
-  const canvasRef = useRef(null);
+interface FuturisticBackgroundProps {
+  children?: ReactNode;
+}
+
+export default function FuturisticBackground({ children }: FuturisticBackgroundProps) {
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const mouse = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
     const canvas = canvasRef.current;
+    if (!canvas) return;
+
     const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
     let width = (canvas.width = window.innerWidth);
     let height = (canvas.height = window.innerHeight);
 
@@ -19,7 +27,7 @@ export default function FuturisticBackground({ children }) {
       vy: (Math.random() - 0.5) * 0.7,
     }));
 
-    function draw() {
+    const draw = () => {
       ctx.clearRect(0, 0, width, height);
 
       for (let i = 0; i < nodes.length; i++) {
@@ -71,7 +79,7 @@ export default function FuturisticBackground({ children }) {
       }
 
       requestAnimationFrame(draw);
-    }
+    };
 
     draw();
 
@@ -83,7 +91,7 @@ export default function FuturisticBackground({ children }) {
     window.addEventListener("resize", handleResize);
 
     // Suivi du curseur
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       mouse.current.x = e.clientX;
       mouse.current.y = e.clientY;
     };
