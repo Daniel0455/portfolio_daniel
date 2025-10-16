@@ -17,7 +17,7 @@ export default function Outil() {
                 Mes <label className="daniel">Outils</label>
             </p>
             <p className="pgris intropro">
-                Les technologies et outils que je maîtrise pour créer des solutions web performantes.
+                Les technologies et outils dont j’ai des connaissances pour créer des solutions web performantes.
             </p>
             <div className="ligne"></div>
 
