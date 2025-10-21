@@ -86,6 +86,23 @@ export default function Nav(){
                 <span></span>
                 </label>
             </div>
+            {/*liste */}
+            <nav className="toggleburgger">
+                {boutons.map((bouton)=>(
+                    <button
+                        key={bouton.label}
+                        className={`btnnav ${bouton.cible === actu ? "active" : ""}`}
+                        onClick={() =>
+                        {
+                            setActu(bouton.cible);
+                            localStorage.setItem('actu', bouton.cible)
+                        }
+                        }
+                    >
+                        {bouton.label}
+                    </button>
+                ))}
+            </nav>
         </div>
     )
 }

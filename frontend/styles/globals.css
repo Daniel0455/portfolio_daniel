@@ -21,14 +21,14 @@
 
 /* Composant invisible au départ */
 .fade-in {
-  opacity: 0;               /* invisible au départ */
-  transform: translateY(20px); /* léger décalage vers le bas */
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    opacity: 0;               /* invisible au départ */
+    transform: translateY(20px); /* léger décalage vers le bas */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
@@ -52,6 +52,23 @@
 .containerburgger
 {
     display: none;
+}
+.toggleburgger
+{
+    display: none;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    box-shadow: -1px 0px 5px 0px rgba(var(--rouge-indice),0.1);
+    position: fixed;
+    z-index: 50;
+    backdrop-filter: blur(10px);
+    right: 0;
+    top: 0;
+    padding-top: 70px;
+    overflow-y: auto;
+    height: 100vh;
 }
 .burger {
     position: relative;
@@ -377,6 +394,10 @@ p{ all: unset; display: block;}
         z-index: 100;
         backdrop-filter: blur(10px);
         box-shadow: 0px 1px 5px 0px rgba(var(--rouge-indice),0.1);
+    }
+    .toggleburgger
+    {
+        display: flex;
     }
     .gardemarge
     {
