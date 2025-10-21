@@ -6,7 +6,7 @@ import Statistique from "@/components/Statistique"
 import Projet from "@/components/Projet"
 import Outil from "@/components/Outil"
 import Langage from "@/components/Langage"
-import Contact from "@/components/Contact"
+import Contact from "@/components/contact"
 import FuturisticBackground from "@/components/Background"
 
 export default function Home() {
@@ -28,15 +28,17 @@ export default function Home() {
   }, []) // [] pour exécuter seulement après le rendu
 
     return (
-    <div className="mainContainer">
-        <FuturisticBackground />
-        <Nav />
-        <div className="fade-in" id="accueil"><Profil /></div>
-        <div className="fade-in" id="propos"><Statistique /></div>
-        <div className="fade-in" id="projet"><Projet /></div>
-        <div className="fade-in" id="outil"><Outil /></div>
-        <div className="fade-in" id="langage"><Langage /></div>
-        <div className="fade-in" id="contact"><Contact /></div>
-    </div>
+        <>
+            <Nav />
+            <div className="mainContainer">
+                <FuturisticBackground />
+                <div className="fade-in" id="accueil"><Profil /></div>
+                <div className="fade-in" id="propos"><Statistique /></div>
+                <div className="fade-in" id="projet"><Projet /></div>
+                <div className="fade-in" id="outil"><Outil /></div>
+                <div className="fade-in" id="langage"><Langage /></div>
+                <div className="fade-in" id="contact"><Contact /></div>
+            </div>
+        </>
     )
 }

@@ -60,6 +60,7 @@ export default function Nav(){
     ]
     return(
         <div>
+            <div className="gardemarge"></div>
             <nav className="nav">
                 {boutons.map((bouton)=>(
                     <button
@@ -76,8 +77,6 @@ export default function Nav(){
                     </button>
                 ))}
             </nav>
-
-            
         </div>
     )
 }

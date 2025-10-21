@@ -35,14 +35,18 @@
 /*********Navigation**********/
 .nav
 {
+    position: fixed;
+    top: 0;
     display:flex;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
     backdrop-filter: blur(10px);
-    background-color: var(--rouge-indice, 0.20);
     z-index: 100;
     box-shadow: 0px 1px 5px 0px rgba(var(--rouge-indice),0.1);
+    width: 100%;
+}
+.gardemarge
+{
+    height: 75px;
 }
 .btnnav
 {
