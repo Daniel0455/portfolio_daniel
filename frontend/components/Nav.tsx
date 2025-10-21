@@ -77,6 +77,15 @@ export default function Nav(){
                     </button>
                 ))}
             </nav>
+            {/*Burgger */}
+            <div className="containerburgger">
+                <label className="burger">
+                <input type="checkbox" id="burger"/>
+                <span></span>
+                <span></span>
+                <span></span>
+                </label>
+            </div>
         </div>
     )
 }
