@@ -1,11 +1,12 @@
 "use client"
 import { useEffect } from "react"
+import Nav from "@/components/Nav"
 import Profil from "@/components/Profil"
 import Statistique from "@/components/Statistique"
 import Projet from "@/components/Projet"
 import Outil from "@/components/Outil"
 import Langage from "@/components/Langage"
-import Contact from "@/components/contact"
+import Contact from "@/components/Contact"
 import FuturisticBackground from "@/components/Background"
 
 export default function Home() {
@@ -29,12 +30,13 @@ export default function Home() {
     return (
     <div className="mainContainer">
         <FuturisticBackground />
-        <div className="fade-in"><Profil /></div>
-        <div className="fade-in"><Statistique /></div>
-        <div className="fade-in"><Projet /></div>
-        <div className="fade-in"><Outil /></div>
-        <div className="fade-in"><Langage /></div>
-        <div className="fade-in"><Contact /></div>
+        <Nav />
+        <div className="fade-in" id="accueil"><Profil /></div>
+        <div className="fade-in" id="propos"><Statistique /></div>
+        <div className="fade-in" id="projet"><Projet /></div>
+        <div className="fade-in" id="outil"><Outil /></div>
+        <div className="fade-in" id="langage"><Langage /></div>
+        <div className="fade-in" id="contact"><Contact /></div>
     </div>
     )
 }

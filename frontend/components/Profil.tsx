@@ -1,4 +1,5 @@
 "use client"
+import {motion} from "framer-motion"
 export default function Profil() {
     return (
         <div className="containerprofil">

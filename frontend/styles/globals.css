@@ -13,6 +13,10 @@
     --violet-indice: 152, 19, 251;
     --rouge-indice: 220, 8, 134;
 }
+*
+{
+    transition: 0.5s;
+}
 
 
 /* Composant invisible au départ */
@@ -28,7 +32,36 @@
 }
 
 
-
+/*********Navigation**********/
+.nav
+{
+    display:flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    background-color: var(--rouge-indice, 0.20);
+    z-index: 100;
+    box-shadow: 0px 1px 5px 0px rgba(var(--rouge-indice),0.1);
+}
+.btnnav
+{
+    width: fit-content;
+    border: none;
+    background: none;
+    margin: 10px;
+    padding: 10px;
+    transition: 0.15s;
+}
+.active{
+    background: linear-gradient(90Deg, var(--bleu), var(--violet));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+    font-weight: 100;
+    font-size: 20px;
+}
 p{ all: unset; display: block;}
 .soustitre
 {
@@ -255,24 +288,25 @@ p{ all: unset; display: block;}
     padding: 50px 5px 50px 5px;
     backdrop-filter: blur(2px);
 }
-.nav
-{
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    display:flex;
-    width: 50px;
-    height:50px;
-    border-radius: 100%;
-    background: linear-gradient(90Deg, var(--bleu), var(--violet));
-    color: white;
-    justify-content:center;
-    align-items: center;
-    z-index: 100;
-    border: none;
-}
+
 /*Responsive*/
 @media screen and (max-width: 830px) {
+    .nav
+    {
+        display: none;
+    }
+    .burgeractive
+    {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index: 100;
+        width: 70%;
+        height: 100vh;
+        align-items: center;
+        background-color: rgba(var(--violet-indice), 0.1);
+        backdrop-filter: blur(10px);
+    }
     .containerprofil
     {
         display: block;
