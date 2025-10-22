@@ -1,6 +1,7 @@
 "use client"
 import { useEffect } from "react"
 import Nav from "@/components/Nav"
+import Theme from "@/components/theme"
 import Profil from "@/components/Profil"
 import Statistique from "@/components/Statistique"
 import Projet from "@/components/Projet"
@@ -25,11 +26,12 @@ export default function Home() {
     }, appearOptions)
 
     faders.forEach(fader => appearOnScroll.observe(fader))
-  }, []) // [] pour exécuter seulement après le rendu
+  }, [])
 
     return (
         <>
             <Nav />
+            <Theme />
             <div className="mainContainer">
                 <FuturisticBackground />
                 <div className="fade-in" id="accueil"><Profil /></div>
