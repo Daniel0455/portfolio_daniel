@@ -138,6 +138,7 @@
     margin: 10px;
     padding: 10px;
     transition: 0.15s;
+    color: rgb(99, 99, 99);
 }
 .active{
     background: linear-gradient(90Deg, var(--bleu), var(--violet));
@@ -152,7 +153,6 @@ p{ all: unset; display: block;}
 .soustitre
 {
     font-size: 25px;
-    color: var(--noir);
     text-align: center;
     margin-top: 50px;
 }
@@ -214,10 +214,6 @@ p{ all: unset; display: block;}
 {
     margin-bottom: 10px;
     margin-top: 10px;
-}
-.pnoir
-{
-    color: var(--noir);
 }
 .pgris
 {
@@ -740,3 +736,12 @@ p{ all: unset; display: block;}
     50% {transform: scale(1.05)}
 }
 
+/*Theme*/
+body[data-theme= "light"]{
+    background: white;
+    color: black;
+}
+body[data-theme= "dark"]{
+    background: black;
+    color: white;
+}

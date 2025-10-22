@@ -1,9 +1,35 @@
 "use client"
+import { useState } from "react"
+import { useEffect } from "react"
 export default function Theme(){
+    const [theme, setTheme] = useState('light');
+    useEffect(()=>{
+        let themesaved = localStorage.getItem('themeActu')
+        if(themesaved){setTheme(themesaved)}
+    },[])
+    useEffect(() =>{
+        document.body.dataset.theme = theme;
+        localStorage.setItem('themeActu', theme);
+        let switchtheme = document.getElementById('input') as HTMLInputElement | null
+        if(switchtheme)
+        {
+            if(theme == 'dark')
+            {
+                switchtheme.checked = true;
+            }
+            else{
+                switchtheme.checked = false
+            }
+        }
+    },[theme])
+    function changerTheme()
+    {
+        setTheme(theme === "light" ? "dark" : "light");
+    }
     return(
         <div className="containertheme">
             <label className="switch">
-            <input id="input" type="checkbox"/>
+            <input id="input" type="checkbox" checked={theme === "dark"} onChange={changerTheme}/>
             <div className="slider round">
                 <div className="sun-moon">
                 <svg id="moon-dot-1" className="moon-dot" viewBox="0 0 100 100">
