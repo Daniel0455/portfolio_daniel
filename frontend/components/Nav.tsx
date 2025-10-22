@@ -3,10 +3,10 @@ import { useState } from "react";
 import { useEffect } from "react";
 export default function Nav(){
     const [actu, setActu] = useState("");
-    const [burgeractivevalue, setBurgeractivevalue] = useState("");
+    const [visible, setVisible] = useState(false);
+    const [listenavigation, setlistenavigation] = useState(false)
     useEffect(() =>{
         let actusaved = localStorage.getItem('actu');
-        let burgeractivereel = localStorage.getItem('burgeractive')
         if(actusaved)
         {
             setActu(actusaved);
@@ -15,14 +15,6 @@ export default function Nav(){
         {
             setActu('accueil')
             localStorage.setItem('actu', 'accueil')
-        }
-        if(burgeractivereel)
-        {
-            setBurgeractivevalue(burgeractivereel)
-        }
-        else
-        {
-            localStorage.setItem('burgeractive', 'nonactive')
         }
     },[]);
     useEffect(() =>{
@@ -80,29 +72,37 @@ export default function Nav(){
             {/*Burgger */}
             <div className="containerburgger">
                 <label className="burger">
-                <input type="checkbox" id="burger"/>
+                <input type="checkbox" id="burger" onChange={(e)=>{setlistenavigation(e.target.checked)}}/>
                 <span></span>
                 <span></span>
                 <span></span>
                 </label>
             </div>
             {/*liste */}
-            <nav className="toggleburgger">
-                {boutons.map((bouton)=>(
-                    <button
-                        key={bouton.label}
-                        className={`btnnav ${bouton.cible === actu ? "active" : ""}`}
-                        onClick={() =>
-                        {
-                            setActu(bouton.cible);
-                            localStorage.setItem('actu', bouton.cible)
-                        }
-                        }
-                    >
-                        {bouton.label}
-                    </button>
-                ))}
-            </nav>
+            {listenavigation && (
+                <nav className="toggleburgger">
+                    {boutons.map((bouton)=>(
+                        <button
+                            key={bouton.label}
+                            className={`btnnav ${bouton.cible === actu ? "active" : ""}`}
+                            onClick={() =>
+                            {
+                                setActu(bouton.cible);
+                                localStorage.setItem('actu', bouton.cible);
+                                setlistenavigation(false);
+                                let toggle = document.getElementById('burger') as HTMLInputElement | null;
+                                if(toggle)
+                                {
+                                    toggle.checked = false;
+                                }
+                            }
+                            }
+                        >
+                            {bouton.label}
+                        </button>
+                    ))}
+                </nav>
+            )}
         </div>
     )
 }
