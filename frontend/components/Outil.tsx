@@ -1,9 +1,11 @@
 "use client"
 export default function Outil() {
     const outils = [
-        { nom: "Next", note: 5 },
+        { nom: "NextJS", note: 5 },
         { nom: "Tailwind CSS", note: 5 },
-        { nom: "Git", note: 4 },
+        { nom: "Bootstrap", note: 5 },
+        { nom: "ExpressJS", note: 4 },
+        { nom: "Git&GitHub", note: 4 },
         { nom: "Figma", note: 3 },
         { nom: "Node.js", note: 4 },
         { nom: "Visual Studio Code", note: 6 },

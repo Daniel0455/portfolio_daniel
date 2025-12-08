@@ -21,6 +21,11 @@ export default function Langage() {
             couleur: "rgb(0, 122, 204)",
             fond: "rgb(0, 122, 204, 0.1)"
         },
+        {
+            nom: "TypeScript",
+            couleur: "rgb(240, 219, 79)",
+            fond: "rgb(240, 219, 79, 0.1)"
+        },
     ]
     return(
         <div className="containerlangage">

@@ -44,6 +44,10 @@
     box-shadow: 0px 1px 5px 0px rgba(var(--rouge-indice),0.1);
     width: 100%;
 }
+.navbody
+{
+    max-width: 1200px;
+}
 .gardemarge
 {
     height: 75px;

@@ -54,20 +54,22 @@ export default function Nav(){
         <div>
             <div className="gardemarge"></div>
             <nav className="nav">
-                {boutons.map((bouton)=>(
-                    <button
-                        key={bouton.label}
-                        className={`btnnav ${bouton.cible === actu ? "active" : ""}`}
-                        onClick={() =>
-                        {
-                            setActu(bouton.cible);
-                            localStorage.setItem('actu', bouton.cible)
-                        }
-                        }
-                    >
-                        {bouton.label}
-                    </button>
-                ))}
+                <nav className="navbody">
+                    {boutons.map((bouton)=>(
+                        <button
+                            key={bouton.label}
+                            className={`btnnav ${bouton.cible === actu ? "active" : ""}`}
+                            onClick={() =>
+                            {
+                                setActu(bouton.cible);
+                                localStorage.setItem('actu', bouton.cible)
+                            }
+                            }
+                        >
+                            {bouton.label}
+                        </button>
+                    ))}
+                </nav>
             </nav>
             {/*Burgger */}
             <div className="containerburgger">

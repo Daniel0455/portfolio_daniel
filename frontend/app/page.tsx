@@ -33,7 +33,7 @@ export default function Home() {
             <Nav />
             <Theme />
             <div className="mainContainer">
-                <FuturisticBackground />
+                {/* <FuturisticBackground /> */}
                 <div className="fade-in" id="accueil"><Profil /></div>
                 <div className="fade-in" id="propos"><Statistique /></div>
                 <div className="fade-in" id="projet"><Projet /></div>
